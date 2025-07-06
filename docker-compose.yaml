@@ -1,0 +1,35 @@
+services:
+    rabbitmq:
+        image: "rabbitmq:3-management"
+        container_name: "queue_brain_ag"
+        env_file: .env
+        ports:
+            - "15672:15672"
+            - "5672:5672"
+    cache:
+        image: redis:6.2-alpine
+        restart: always
+        env_file: .env
+        ports:
+            - '6379:6379'
+        command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+    db:
+        image: postgres:latest
+        container_name: db_brain_ag
+        env_file: .env
+        restart: always
+        ports:
+            - "5432:5432"
+    api:
+        build: .
+        container_name: api_brain_ag
+        env_file: .env
+        restart: "on-failure"
+        volumes:
+            - .:/application
+        depends_on:
+            - db
+        links:
+            - db
+        ports:
+            - "8000:8000"
