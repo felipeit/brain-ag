@@ -79,15 +79,23 @@ Acesse:
 
 ```bash
 .
-├── app/                      # Código principal da aplicação
-│   ├── domain/               # Camada de domínio
-│   ├── application/          # Casos de uso (usecases)
-│   ├── infra/                # Repositórios, serviços externos
-│   └── api/                  # ViewSets, serializers e rotas
+├── core/                     # Configurações centrais do Django (settings, urls, etc)
+├── brain-ag/                 # Código principal da aplicação
+│   ├── domain/               # Camada de domínio (entidades e regras de negócio puras)
+│   ├── application/          # Camada de orquestração da lógica de negócio com casos de uso (usecases)
+│   ├── infra/                # Infraestrutura: repositórios, serviços externos, persistência
+│   ├── management/           # Comandos customizados do Django
+│   ├── migrations/           # Migrations do banco de dados
+│   ├── models/               # Models do Django (representação do banco)
+│   ├── admin.py              # Registro das models no Django Admin
+│   ├── apps.py               # Configuração do app Django
+│   ├── managers.py           # Managers personalizados para models
+│   └── signals.py            # Handlers para sinais do Django                  
 ├── tests/                    # Testes automatizados
-├── docker-compose.yml
-├── Dockerfile
-└── README.md
+├── docker-compose.yml        # Orquestração de containers
+├── Dockerfile                # Imagem Docker para a aplicação
+└── README.md                 # Documentação do projeto
+
 ```
 
 ---
