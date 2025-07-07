@@ -61,8 +61,8 @@ docker compose exec api pytest || docker compose exec api python manage.py test
 ## 🚀 Como subir o projeto com Docker Compose
 
 ```bash
-git clone https://github.com/seu-usuario/brain-agriculture.git
-cd brain-agriculture
+git clone https://github.com/seu-usuario/brain-ag.git
+cd brain-ag
 
 # Subir os containers
 docker compose up -d --build
