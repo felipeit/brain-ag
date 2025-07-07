@@ -1,0 +1,502 @@
+[
+{
+  "model": "rural_producers.produtor",
+  "pk": "06a535c7-be96-423a-89ba-5c60baeaa494",
+  "fields": {
+    "doc_identificacao": "92.911.218/0001-16",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "11a78387-3f60-4ae1-8cd5-5e03f27e8538",
+  "fields": {
+    "doc_identificacao": "267.846.820-84",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "1528904f-1830-4a50-99cf-a1e877040703",
+  "fields": {
+    "doc_identificacao": "00.283.258/0001-42",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "7e4a0661-2e9f-4ce8-8c81-be671692372d",
+  "fields": {
+    "doc_identificacao": "709.457.900-40",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "8eec96de-f1aa-45e9-85e6-431d2fb73dde",
+  "fields": {
+    "doc_identificacao": "63.878.227/0001-54",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "9f4b7fb2-0512-4d2d-8f8a-09b1105c16a2",
+  "fields": {
+    "doc_identificacao": "254.372.700-03",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "a870dfcb-1e70-4de7-aa0c-abc18c973930",
+  "fields": {
+    "doc_identificacao": "53.543.558/0001-80",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "b48ef831-4b52-408b-8a1e-ee15c3c1a363",
+  "fields": {
+    "doc_identificacao": "130.959.660-32",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.produtor",
+  "pk": "ed96bf82-f809-4fe4-861a-aaf8807aa770",
+  "fields": {
+    "doc_identificacao": "64.868.744/0001-05",
+    "nome_produtor": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "11999999999"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "0174fdab-0756-4473-9013-77df1f295a2f",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "40c10e17-cc28-4014-b0ee-4987109b0f64",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "19d54d59-f02e-48b0-9f84-aaf5f8646802",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "edecbe82-5519-4ba0-9f57-e270367a9d24",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "2cf08859-07ef-41e9-9266-04ba3ff5e975",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "edecbe82-5519-4ba0-9f57-e270367a9d24",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "44217110-8695-4d14-a6e3-a98c238e8cf6",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "7e534f0a-1822-4a0c-8a2f-ec31caa1b612",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "71c24a52-425c-494a-82cb-3cfa234ee997",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "7e534f0a-1822-4a0c-8a2f-ec31caa1b612",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "8a3a6eb4-dc66-4248-a3be-c042aeef0f04",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "56c4666a-cb3a-4c34-bc05-2395ea7c5f0c",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "9e09a61d-33e2-4fcf-9f8f-8f6964701e5c",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "ebd8d4a2-c16b-4bce-9643-6c19b967e042",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "a5bd4cda-b4db-49c0-9ed3-a9d03ef7d55c",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "56c4666a-cb3a-4c34-bc05-2395ea7c5f0c",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "b7b80c24-99c7-45e9-9c3f-59a3e2f9f18b",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "664a5b6e-9b6e-4d9f-82ec-9121fa29d12a",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "be5c3d8a-9d40-4ad8-b5e1-15bee9ba269d",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "1131fd4b-6d94-4c6c-9580-2b00ab6946a4",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "bf1dcc25-7e23-4172-ae64-2b8d38769f1a",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "664a5b6e-9b6e-4d9f-82ec-9121fa29d12a",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "bf270698-2b8e-4cec-b26b-5c3ee4cfeae2",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "ebd8d4a2-c16b-4bce-9643-6c19b967e042",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "e1efc88f-bc87-414d-9bb1-75766e7fbf26",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "40c10e17-cc28-4014-b0ee-4987109b0f64",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "e2588cb2-9145-4b34-b655-fc6b1a299973",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "30ea4b78-8e1e-44e7-9fa3-6dff95e297ac",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "e64fa5dd-c78c-4409-895d-3d8ece47ec5c",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "89db92ef-967a-4107-ad76-dd214e7b4889",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "ee1a5de4-7ad0-493d-bd23-129621df974f",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "1131fd4b-6d94-4c6c-9580-2b00ab6946a4",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "f96cd398-4d9f-4c8d-896a-540edde942d4",
+  "fields": {
+    "safra": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+    "propriedade_rural": "89db92ef-967a-4107-ad76-dd214e7b4889",
+    "nome_cultura": "Milho"
+  }
+},
+{
+  "model": "rural_producers.culturaplantada",
+  "pk": "ffcef9c9-63eb-4e18-a288-8f9375e5158a",
+  "fields": {
+    "safra": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+    "propriedade_rural": "30ea4b78-8e1e-44e7-9fa3-6dff95e297ac",
+    "nome_cultura": "Soja"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "1131fd4b-6d94-4c6c-9580-2b00ab6946a4",
+  "fields": {
+    "produtor": "a870dfcb-1e70-4de7-aa0c-abc18c973930",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "189c5517-1f0d-40cd-9630-3b4f9b7894b4",
+  "fields": {
+    "produtor": "8eec96de-f1aa-45e9-85e6-431d2fb73dde",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "30ea4b78-8e1e-44e7-9fa3-6dff95e297ac",
+  "fields": {
+    "produtor": "11a78387-3f60-4ae1-8cd5-5e03f27e8538",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "40c10e17-cc28-4014-b0ee-4987109b0f64",
+  "fields": {
+    "produtor": "ed96bf82-f809-4fe4-861a-aaf8807aa770",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "415e042e-3eee-4356-9473-f7476f234384",
+  "fields": {
+    "produtor": "1528904f-1830-4a50-99cf-a1e877040703",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "53e226cc-64bd-46d2-ba9a-cce6fb3a6ea3",
+  "fields": {
+    "produtor": "b48ef831-4b52-408b-8a1e-ee15c3c1a363",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "56c4666a-cb3a-4c34-bc05-2395ea7c5f0c",
+  "fields": {
+    "produtor": "b48ef831-4b52-408b-8a1e-ee15c3c1a363",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "664a5b6e-9b6e-4d9f-82ec-9121fa29d12a",
+  "fields": {
+    "produtor": "9f4b7fb2-0512-4d2d-8f8a-09b1105c16a2",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "678d1833-3f48-450b-9e9b-f6a51bfd05a6",
+  "fields": {
+    "produtor": "7e4a0661-2e9f-4ce8-8c81-be671692372d",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "6f0f987f-59aa-4f7e-ac22-c18b20ca0038",
+  "fields": {
+    "produtor": "ed96bf82-f809-4fe4-861a-aaf8807aa770",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "7e534f0a-1822-4a0c-8a2f-ec31caa1b612",
+  "fields": {
+    "produtor": "8eec96de-f1aa-45e9-85e6-431d2fb73dde",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "831a629f-76cb-4ef3-9f46-dc53ecc32ba5",
+  "fields": {
+    "produtor": "06a535c7-be96-423a-89ba-5c60baeaa494",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "89db92ef-967a-4107-ad76-dd214e7b4889",
+  "fields": {
+    "produtor": "1528904f-1830-4a50-99cf-a1e877040703",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "b00b9a2f-4de0-4c65-b0ed-26b51245d6e7",
+  "fields": {
+    "produtor": "9f4b7fb2-0512-4d2d-8f8a-09b1105c16a2",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "b7e22bad-c677-4591-9e15-3ce91f10bf43",
+  "fields": {
+    "produtor": "a870dfcb-1e70-4de7-aa0c-abc18c973930",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "ebd8d4a2-c16b-4bce-9643-6c19b967e042",
+  "fields": {
+    "produtor": "06a535c7-be96-423a-89ba-5c60baeaa494",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "edecbe82-5519-4ba0-9f57-e270367a9d24",
+  "fields": {
+    "produtor": "7e4a0661-2e9f-4ce8-8c81-be671692372d",
+    "nome_fazenda": "Fazenda Primavera",
+    "area_agricultavel": "150.50",
+    "area_vegetacao": "30.00",
+    "area_total": "200.50",
+    "cidade": "Limeira",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.propriedaderural",
+  "pk": "f574fd7d-915e-4474-9922-d057e4a15f5e",
+  "fields": {
+    "produtor": "11a78387-3f60-4ae1-8cd5-5e03f27e8538",
+    "nome_fazenda": "Fazenda São Jorge",
+    "area_agricultavel": "300.00",
+    "area_vegetacao": "100.00",
+    "area_total": "450.00",
+    "cidade": "Ribeirão Preto",
+    "estado": "SP"
+  }
+},
+{
+  "model": "rural_producers.safra",
+  "pk": "286ee960-1eb7-4210-88b2-1fb71b99f04d",
+  "fields": {
+    "nome": "Safra 2023"
+  }
+},
+{
+  "model": "rural_producers.safra",
+  "pk": "475ad356-7834-4c92-a6ef-89a33adaeed7",
+  "fields": {
+    "nome": "Safra 2024"
+  }
+}
+]

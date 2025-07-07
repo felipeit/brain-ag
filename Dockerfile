@@ -35,5 +35,8 @@ RUN mkdir /application
 WORKDIR /application
 
 COPY pyproject.toml poetry.lock ./
-
+COPY entrypoint.sh ./entrypoint.sh
 RUN poetry config virtualenvs.create false && poetry install
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["sh", "/application/entrypoint.sh"]

@@ -21,8 +21,12 @@ env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
 )
+if os.environ.get("READ_ENV_FILE", "false").lower() == "true":
+    from pathlib import Path
+    env.read_env(Path(__file__).resolve().parent.parent / ".env")
+
 # Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+#environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -96,7 +100,7 @@ DATABASES = {
         'NAME': env('POSTGRES_DB'),
         'USER': env('POSTGRES_USER'),
         'PASSWORD': env('POSTGRES_PASSWORD'),
-        'HOST': 'localhost',
+        'HOST': env('POSTGRES_HOST'),
         'PORT': env('POSTGRES_PORT', default='5432'),
     }
 }
