@@ -10,7 +10,6 @@ class ProdutorFilter(filters.FilterSet):
         fields = '__all__'
 
 
-
 class PropriedadeFilter(filters.FilterSet):
     class Meta:
         model = PropriedadeRural
