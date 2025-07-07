@@ -178,4 +178,4 @@ CACHES = {
 
 # Pytest
 # https://pytest-django.readthedocs.io/en/latest/faq.html#how-can-i-use-manage-py-test-with-pytest-django
-TEST_RUNNER = 'src.findme.infra.api.management.commands.pytest_to_test.PytestTestRunner'
+TEST_RUNNER = 'rural_producers.management.commands.pytest_to_test.PytestTestRunner'

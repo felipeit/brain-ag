@@ -24,7 +24,7 @@ django-environ = "^0.12.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "core.settings"
-python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py", "tests.py"]
 asyncio_mode = "auto"
 addopts = "-p no:warnings"
 
