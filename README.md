@@ -18,16 +18,6 @@ A arquitetura foi planejada para suportar **alta escalabilidade**, **observabili
 
 ---
 
-## 🧩 Modelo de Dados
-
-![Diagrama Entidade Relacionamento](./docs/data-model.png)
-
-* Um produtor pode ter várias propriedades rurais.
-* Cada propriedade pode ter várias culturas plantadas por safra.
-* Cada cultura está associada a uma safra específica.
-
----
-
 ## ⚙️ Tecnologias e Conceitos Aplicados
 
 * **Python 3.10 + Django**
