@@ -10,7 +10,7 @@ def client() -> APIClient:
 @pytest.fixture
 def produtor_payload() -> dict[str, Any]:
     return {
-        "doc_identificacao": "709.457.900-40",
+        "doc_identificacao": "994.827.440-71",
         "nome_produtor": "João da Silva",
         "email": "joao@email.com",
         "telefone": "11999999999",
