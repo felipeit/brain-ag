@@ -14,6 +14,24 @@
             "django": true,
             "autoStartBrowser": false,
             "program": "${workspaceFolder}/manage.py"
+        },{
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Django Migrate",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "migrate"
+            ],
+            "django": true
+        },{
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Django Test",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "test"
+            ],
+            "django": true
         }
     ]
 }
