@@ -1,9 +1,6 @@
-#from typing import Dict
-#from rural_producers import models
 from rest_framework import serializers
 from rural_producers.models import CulturaPlantada, Produtor, Safra, PropriedadeRural
-# from django.db.models import Model
-# from django.db import transaction
+
 
 
 class SafraSerializer(serializers.ModelSerializer):
