@@ -1,4 +1,5 @@
 from typing import List
+from uuid import UUID
 from pydantic import BaseModel
 from rural_producers.application.dto.propriedade import PropriedadeDTO
 
@@ -9,3 +10,4 @@ class ProdutorDTO(BaseModel):
     email: str
     telefone: str
     propriedades: List[PropriedadeDTO]
+    id: UUID = None

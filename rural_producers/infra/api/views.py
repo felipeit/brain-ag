@@ -57,14 +57,18 @@ class ProdutorViewSet(ModelViewSet):
         input = ProdutorDTO(**request.data)
         usecase = CreateProdutorUsecase(repo=repository)
         output = usecase.execute(input=input)
-        return Response({"message": "Produtor criado com sucesso", "id": output.id}, status=status.HTTP_201_CREATED)
+        if output.status == status.HTTP_201_CREATED:
+            return Response({"message": "Produtor criado com sucesso", "id": output.id}, status=status.HTTP_201_CREATED)
+        return Response({"message": "Falha ao criar Produtor", "error": output.error}, status=status.HTTP_400_BAD_REQUEST)
     
     def update(self, request, *args, **kwargs) -> Response:
-        input = ProdutorDTO(**request.data)
+        produtor_id = kwargs.get('pk')
         repository = ProdutorRepository(db=Produtor)
         usecase = UpdateProdutorUsecase(repo=repository)
-        usecase.execute(input=input)
-        return Response({"message": "Produtor atualizado com sucesso"}, status=status.HTTP_200_OK)
+        output = usecase.execute(id=produtor_id, data=request.data)
+        if output.status == status.HTTP_200_OK:
+            return Response({"message": "Produtor atualizado com sucesso", "id": output.id}, status=status.HTTP_200_OK)
+        return Response({"message": "Falha ao atualizar Produtor", "error": output.error}, status=status.HTTP_400_BAD_REQUEST)
     
     
 

@@ -26,6 +26,7 @@ class Produtor:
         self._email = email
         self._telefone = telefone
         self._propriedades = propriedades or []
+        self._errors = []
     
     @property
     def id(self) -> UUID:
@@ -51,12 +52,16 @@ class Produtor:
     def propriedades(self) -> List[PropriedadeRural]:
         return self._propriedades
 
+    @id.setter
+    def id(self, value) -> None:
+        self._id = value
+    
     @documento.setter
     def documento(self, value: DocumentoIdentificacao) -> None:
         if not value:
             raise ValueError("Documento inválido")
         self._documento = value
-
+    
     @nome.setter
     def nome(self, value: str) -> None:
         if not value:
