@@ -1,3 +1,4 @@
+from typing import Any
 from uuid import UUID
 from pydantic import BaseModel
 from rural_producers.application.dto.produtor import ProdutorDTO
@@ -10,38 +11,46 @@ from rural_producers.domain.values_objects.documento_identificacao import Docume
 from rural_producers.domain.values_objects.email import Email
 from rural_producers.infra.repository.produtor_repository import ProdutorRepository
 
-class Output(BaseModel):
-    id: UUID
 
+class OutputSucess(BaseModel):
+    id: UUID
+    status: int = 201
+
+class OutputError(BaseModel):
+    error: Any
+    status: int = 400
 
 class CreateProdutorUsecase:
     def __init__(self, repo: ProdutorRepository) -> None:
         self._repo = repo
     
-    def execute(self, input: ProdutorDTO) -> Output:
-        propriedades = []
-        for prop in input.propriedades:
-            culturas = [
-                Cultura(nome=c.nome_cultura, safra=Safra(c.safra.nome))
-                for c in prop.culturas
-            ]
-            propriedade = PropriedadeRural(
-                nome_fazenda=prop.nome_fazenda,
-                area_total=prop.area_total,
-                area_agricultavel=prop.area_agricultavel,
-                area_vegetacao=prop.area_vegetacao,
-                cidade=prop.cidade,
-                estado=prop.estado,
-                culturas=culturas
-            )
-            propriedades.append(propriedade)
+    def execute(self, input: ProdutorDTO) -> OutputSucess | OutputError:
+        try:
+            propriedades = []
+            for prop in input.propriedades:
+                culturas = [
+                    Cultura(nome=c.nome_cultura, safra=Safra(c.safra.nome))
+                    for c in prop.culturas
+                ]
+                propriedade = PropriedadeRural(
+                    nome_fazenda=prop.nome_fazenda,
+                    area_total=prop.area_total,
+                    area_agricultavel=prop.area_agricultavel,
+                    area_vegetacao=prop.area_vegetacao,
+                    cidade=prop.cidade,
+                    estado=prop.estado,
+                    culturas=culturas
+                )
+                propriedades.append(propriedade)
 
-        produtor = Produtor(
-            documento=DocumentoIdentificacao(input.doc_identificacao),
-            nome=input.nome_produtor,
-            email=Email(input.email),
-            telefone=Telefone(input.telefone),
-            propriedades=propriedades
-        )
-        self._repo.save(produtor)
-        return Output(id=produtor.id)
+            produtor = Produtor(
+                documento=DocumentoIdentificacao(input.doc_identificacao),
+                nome=input.nome_produtor,
+                email=Email(input.email),
+                telefone=Telefone(input.telefone),
+                propriedades=propriedades
+            )
+            self._repo.save(produtor)
+            return OutputSucess(id=produtor.id)
+        except Exception as err:
+            return OutputError(error=str(err))
